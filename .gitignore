@@ -4,6 +4,8 @@
 
 *.xd
 
+
+./assets/fonts/
 infos
 
 .DS_Store
