@@ -1,0 +1,45 @@
+@import '../abstract/variables';
+
+
+#result-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: radial-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    padding: 2rem;
+    color: papayawhip;
+    h3 {
+        font-size: $text-size;
+        font-weight: 500;
+        padding-bottom: 1.5rem;
+    }
+    .result-circle {
+        background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        h1 {
+            padding-top: 20px;
+            font-size: 55px;
+            font-weight: 800;
+        }
+        p {
+            font-weight: 500;
+            color: $neutral-lavender;
+        }
+    }
+    h2 {
+        font-weight: 800;
+        padding: 10px 0px 5px;
+    }
+    p {
+        padding: 0rem 2rem;
+        font-weight: 500;
+        color: $neutral-lavender;
+    }
+
+    
+}

@@ -1,0 +1,16 @@
+
+*.sketch
+*.fig
+
+*.xd
+
+infos
+
+.DS_Store
+.prettierignore
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
