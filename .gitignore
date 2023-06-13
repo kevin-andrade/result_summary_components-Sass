@@ -5,8 +5,9 @@
 *.xd
 
 
-./assets/fonts/
+../assets/fonts/
 infos
+design
 
 .DS_Store
 .prettierignore

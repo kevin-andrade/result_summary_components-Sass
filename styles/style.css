@@ -4,29 +4,52 @@
   padding: 0;
 }
 
-html, body {
+body {
   font-family: "Hanken Grotesk", sans-serif;
   background-color: hsl(0, 0%, 100%);
+  color: hsl(241, 100%, 89%);
 }
 
+@media (min-width: 600px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-container {
+    box-shadow: rgb(2, 2, 2) 0px 3px 8px;
+    border-radius: 2rem;
+    height: 450px;
+    width: 650px;
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+  }
+  .container-principal {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
 #result-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background: radial-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0px 0px 30px 30px;
   padding: 2rem;
   color: papayawhip;
 }
 #result-container h3 {
   font-size: 1.12rem;
   font-weight: 500;
+  color: hsl(241, 100%, 89%);
   padding-bottom: 1.5rem;
 }
 #result-container .result-circle {
-  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
   border-radius: 50%;
   width: 140px;
   height: 140px;
@@ -50,10 +73,35 @@ html, body {
   color: hsl(241, 100%, 89%);
 }
 
+@media (min-width: 600px) {
+  #result-container {
+    border-radius: 30px;
+    height: 450px;
+    width: 330px;
+  }
+  #result-container h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 2rem;
+  }
+  #result-container .result-circle {
+    width: 170px;
+    height: 170px;
+  }
+  #result-container .result-circle h1 {
+    padding-top: 30px;
+  }
+  #result-container h2 {
+    padding-top: 30px;
+  }
+  #result-container p {
+    padding-top: 0.7rem;
+  }
+}
 #summary-container {
   display: flex;
   flex-direction: column;
-  margin: 1rem 2rem;
+  margin: 1.5rem 2rem;
 }
 #summary-container .summary {
   display: flex;
@@ -107,7 +155,7 @@ html, body {
   background: hsla(234, 85%, 45%, 0.037);
 }
 #summary-container .summary .btn {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   border-radius: 50px;
   border: none;
   height: 60px;
@@ -115,4 +163,25 @@ html, body {
   font-size: 18px;
   font-weight: 800;
   color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 600px) {
+  #summary-container {
+    height: 450px;
+    justify-content: center;
+  }
+  #summary-container .summary {
+    gap: 10px;
+  }
+  #summary-container .summary h3 {
+    padding-bottom: 9px;
+  }
+  #summary-container .summary .card {
+    width: 250px;
+  }
+  #summary-container .summary .btn {
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
