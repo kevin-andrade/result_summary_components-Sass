@@ -5,9 +5,9 @@
 *.xd
 
 
-assets
+assets/
 infos
-design
+design/
 
 .DS_Store
 .prettierignore
