@@ -183,5 +183,9 @@ body {
     height: 50px;
     margin-top: 20px;
     margin-bottom: 50px;
+    cursor: pointer;
+  }
+  #summary-container .summary .btn:active {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   }
 }/*# sourceMappingURL=style.css.map */
